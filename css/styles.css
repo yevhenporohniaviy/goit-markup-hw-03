@@ -21,9 +21,36 @@ body {
 address {
     font-style: normal
 }
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+ul,ol {
+    margin: 0;
+    padding: 0;
+}
 
 
 /* General styles*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1158px;
+    
+    padding: 0;
+    margin: 0 auto;
+}
 .list {
     list-style: none;
 }
@@ -65,6 +92,14 @@ address {
 
 
 /* Header */
+.header {
+    border-bottom: 1px solid var(--cornflower);
+}
+.header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .header .list-item {
     color: var(--navyblue);
     font-size: 16px;
@@ -186,9 +221,5 @@ address {
     line-height: 24px;
     letter-spacing: 0.02em;
 }
-
-
-
-
 
 
