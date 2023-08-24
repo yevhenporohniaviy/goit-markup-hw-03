@@ -1,3 +1,8 @@
+/* 
+Значення для line-height потрібно задавати у вигляді множника. Для цього потрібно розділити значення line-height у px на значення font-size у px. Наприклад, 24рх / 16рх = 1.5
+
+Значення для letter-spacing потрібно задавати у em. Для цього потрібно розділити значення letter-spacing у px на значення font-size у px. Наприклад, 0.32рх / 16рх = 0.02em 
+*/
 :root {
     --iris: #4D5AE5;
     --ocean: #404BBF;
@@ -126,7 +131,6 @@ ul,ol {
 }
 .header .list-item, .header .address-item {   
 
-    font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.02em;
 }
@@ -173,13 +177,14 @@ ul,ol {
 .hero-section .service-btn:focus {
     background-color: var(--ocean, #404BBF);
 }
+
 .hero-section .title {
     max-width: 496px;
     color: var(--white);
     text-align: center;
     font-size: 56px;
     line-height: 1.07;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.02em;
     margin-bottom:48px
 }
 
