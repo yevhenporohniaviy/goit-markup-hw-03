@@ -50,7 +50,6 @@ ul,ol {
 
 .container {
     max-width: 1158px;
-    
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -120,8 +119,9 @@ ul,ol {
     letter-spacing: 0.02em;
     line-height: 1.5;
 }
-.header .header-list .header-list-item,
-.header .address-list .address-list-item {
+.header .header-list .header-list-item .list-item,
+.header .address-list .address-list-item .address-item  {
+    display: block;
     padding: 24px 0;
 }
 .header .list-item, .header .address-item {   
